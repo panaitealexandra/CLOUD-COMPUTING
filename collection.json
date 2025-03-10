@@ -1,0 +1,195 @@
+{
+    "info": {
+      "name": "RESTful API Collection",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "GET Requests",
+        "item": [
+          {
+            "name": "Get All Products",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:3000/products",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["products"]
+              }
+            }
+          },
+          {
+            "name": "Get Product by ID",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:3000/products/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["products", "1"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "POST Requests",
+        "item": [
+          {
+            "name": "Create Product",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:3000/products",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["products"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"name\": \"Product\",\n    \"price\": 29.99,\n    \"description\": \"This is a new product\"\n}"
+              }
+            }
+          },
+          {
+            "name": "Create Bulk Products",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:3000/products/bulk",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["products", "bulk"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"products\": [\n        {\n            \"name\": \"Product 1\",\n            \"price\": 19.99,\n            \"description\": \"Description for product 1\"\n        },\n        {\n            \"name\": \"Product 2\",\n            \"price\": 29.99,\n            \"description\": \"Description for product 2\"\n        }\n    ]\n}"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "PUT Requests",
+        "item": [
+          {
+            "name": "Update Product",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:3000/products/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["products", "1"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"name\": \"Updated Product\",\n    \"price\": 39.99,\n    \"description\": \"This product has been updated\"\n}"
+              }
+            }
+          },
+          {
+            "name": "Update Multiple Products",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:3000/products",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["products"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"products\": [\n        {\n            \"id\": 1,\n            \"name\": \"Updated Product 1\",\n            \"price\": 24.99,\n            \"description\": \"This is updated product 1\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Updated Product 2\",\n            \"price\": 34.99,\n            \"description\": \"This is updated product 2\"\n        }\n    ]\n}"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "DELETE Requests",
+        "item": [
+          {
+            "name": "Delete Product",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:3000/products/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["products", "1"]
+              }
+            }
+          },
+          {
+            "name": "Delete Multiple Products",
+            "request": {
+              "method": "DELETE",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:3000/products",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["products"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"ids\": [1, 2, 3]\n}"
+              }
+            }
+          },
+          {
+            "name": "Delete All Products",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:3000/products",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["products"]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
