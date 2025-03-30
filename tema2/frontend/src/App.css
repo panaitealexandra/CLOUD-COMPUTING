@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8e8f2;
+    color: #5a189a;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: #7b2cbf;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .product-card, .cart-item {
+    background: #ffe5ec;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-card:hover, .cart-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn {
+    background-color: #9d4edd;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #7b2cbf;
+  }
+  
+  .remove {
+    background-color: #ff6b6b;
+  }
+  
+  .remove:hover {
+    background-color: #ff4f4f;
+  }
+  
+  .loading, .error {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff006e;
+  }
+  
+  .total-items {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+
+.reviews {
+  margin-top: 15px;
+  text-align: left;
+  border-top: 1px solid #e0b0ff;
+  padding-top: 10px;
+}
+
+.review {
+  background-color: #f9f4ff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.reviewer {
+  font-weight: bold;
+}
+
+.rating {
+  color: #9d4edd;
+}
+
+.review-date {
+  font-size: 0.8em;
+  color: #666;
+  margin: 0;
+}
+
+.review-comment {
+  margin-top: 5px;
+}
+
+.review-btn {
+  margin-top: 10px;
+  background-color: #7b2cbf;
+  font-size: 0.9em;
+}
+
+.review-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.review-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #7b2cbf;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel {
+  background-color: #aaa;
+}
+
+.cancel:hover {
+  background-color: #999;
+}

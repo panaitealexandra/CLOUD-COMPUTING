@@ -1,0 +1,44 @@
+{
+  "reviews": [
+    {
+      "id": 1743331431610,
+      "productId": 11,
+      "nickname": "Anonymous",
+      "rating": 5,
+      "comment": "",
+      "date": "2025-03-30T10:43:51.610Z"
+    },
+    {
+      "id": 1743331454913,
+      "productId": 1,
+      "nickname": "alex",
+      "rating": 5,
+      "comment": "great!",
+      "date": "2025-03-30T10:44:14.913Z"
+    },
+    {
+      "id": 1743331530907,
+      "productId": 1,
+      "nickname": "Anonymous",
+      "rating": 4,
+      "comment": "",
+      "date": "2025-03-30T10:45:30.907Z"
+    },
+    {
+      "id": 1743331538669,
+      "productId": 1,
+      "nickname": "Anonymous",
+      "rating": 1,
+      "comment": "",
+      "date": "2025-03-30T10:45:38.669Z"
+    },
+    {
+      "id": 1743332771727,
+      "productId": 2,
+      "nickname": "Anonymous",
+      "rating": 5,
+      "comment": "!",
+      "date": "2025-03-30T11:06:11.727Z"
+    }
+  ]
+}

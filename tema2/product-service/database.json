@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Updated Product 1",
+      "price": 24.99,
+      "description": "This is updated product 1",
+      "createdAt": "2025-03-09T22:20:05.009Z",
+      "updatedAt": "2025-03-10T07:26:21.782Z"
+    },
+    {
+      "id": 2,
+      "name": "Updated Product 2",
+      "price": 34.99,
+      "description": "This is updated product 2",
+      "createdAt": "2025-03-09T22:20:05.010Z",
+      "updatedAt": "2025-03-10T07:26:21.782Z"
+    },
+    {
+      "id": 3,
+      "name": "Wireless Headphones",
+      "price": 149.99,
+      "description": "Noise-cancelling wireless headphones with 20-hour battery life",
+      "createdAt": "2025-03-09T22:20:05.010Z"
+    },
+    {
+      "id": 4,
+      "name": "Smart Watch",
+      "price": 249.99,
+      "description": "Fitness tracking smart watch with heart rate monitor",
+      "createdAt": "2025-03-09T22:20:05.010Z"
+    },
+    {
+      "id": 5,
+      "name": "Tablet",
+      "price": 349.99,
+      "description": "10-inch tablet with retina display and 64GB storage",
+      "createdAt": "2025-03-09T22:20:05.010Z"
+    },
+    {
+      "id": 7,
+      "name": "Sample Product",
+      "price": 29.99,
+      "description": "This is a sample product",
+      "createdAt": "2025-03-10T05:50:14.641Z"
+    },
+    {
+      "id": 8,
+      "name": "Product 1",
+      "price": 19.99,
+      "description": "Description for product 1",
+      "createdAt": "2025-03-10T05:50:23.574Z"
+    },
+    {
+      "id": 9,
+      "name": "Product 2",
+      "price": 29.99,
+      "description": "Description for product 2",
+      "createdAt": "2025-03-10T05:50:23.574Z"
+    },
+    {
+      "id": 10,
+      "name": "Product",
+      "price": 29.99,
+      "description": "This is a new product",
+      "createdAt": "2025-03-10T07:26:01.713Z"
+    },
+    {
+      "id": 11,
+      "name": "Product 1",
+      "price": 19.99,
+      "description": "Description for product 1",
+      "createdAt": "2025-03-10T07:26:09.760Z"
+    }
+  ]
+}
