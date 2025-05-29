@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  <h2>Welcome {{ user.get("name") }}!</h2>
+  {% if edit_profile_url %}
+    <a href='{{edit_profile_url}}'>Edit Profile</a> | 
+  {% endif %}
+  <a href="{{ url_for('identity.logout') }}">Logout</a> | <a href="/add">Add Task</a>
+  <ul>
+    {% for task in tasks %}
+      <li>{{ task.title }} - {{ "Archived" if task.archived else "Active" }} - <a href="/uploads/{{ task.file }}">File</a></li>
+    {% endfor %}
+  </ul>
+  <hr>
+  <footer style="text-align: right">{{ title }}</footer>
+</body>
